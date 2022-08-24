@@ -11,6 +11,57 @@ var getsortzam2btn = document.getElementById("sortzam2");
 
 getinput.addEventListener("keyup", filter);
 
+// Methid 2
+
+// getsortazm2btn.addEventListener("click", sortingazm2);
+// getsortzam2btn.addEventListener("click", sortingzam2);
+
+// var shouldswitch = true;
+// var switching = true;
+
+function sortingazm2() {}
+
+// console.log(getli.length);
+
+do {
+  switching = false;
+
+  var i = 0;
+
+  for (i; i < getli.length; i++) {
+    shouldswitch = false;
+
+    if (
+      getli[i].textContent.toLowerCase() >
+      getli[i + 1].textContent.toLowerCase()
+    ) {
+      shouldswitch = true;
+      break;
+    }
+  }
+
+  if (shouldswitch) {
+    switching = true;
+  }
+} while (switching);
+
+console.log(getli[0].textContent.toLowerCase());
+console.log(getli[1].textContent.toLowerCase());
+
+// Ag Ag                                        // Mg Mg
+if (getli[0].textContent.toLowerCase() > getli[1].textContent.toLowerCase()) {
+  console.log("true");
+} else if (
+  getli[0].textContent.toLowerCase() === getli[1].textContent.toLowerCase()
+) {
+} else {
+  console.log("false");
+}
+
+function sortingzam2() {}
+
+// ----------------------------------------------------------------------------------------------------------------------------
+
 // Method 1
 
 getsortazm1btn.addEventListener("click", sortingazm1);
