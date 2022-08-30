@@ -23,27 +23,27 @@ function sortingazm2() {}
 
 // console.log(getli.length);
 
-do {
-  switching = false;
+// do {
+//   switching = false;
 
-  var i = 0;
+//   var i = 0;
 
-  for (i; i < getli.length; i++) {
-    shouldswitch = false;
+//   for (i; i < getli.length; i++) {
+//     shouldswitch = false;
 
-    if (
-      getli[i].textContent.toLowerCase() >
-      getli[i + 1].textContent.toLowerCase()
-    ) {
-      shouldswitch = true;
-      break;
-    }
-  }
+//     if (
+//       getli[i].textContent.toLowerCase() >
+//       getli[i + 1].textContent.toLowerCase()
+//     ) {
+//       shouldswitch = true;
+//       break;
+//     }
+//   }
 
-  if (shouldswitch) {
-    switching = true;
-  }
-} while (switching);
+//   if (shouldswitch) {
+//     switching = true;
+//   }
+// } while (switching);
 
 console.log(getli[0].textContent.toLowerCase());
 console.log(getli[1].textContent.toLowerCase());
