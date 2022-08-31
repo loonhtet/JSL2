@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #292c35;
+  color: #f4f4f4;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  border: 2px solid #0c0d0f;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px dashed #f4f4f4;
+}
+
+small {
+  display: block;
+  color: #777;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form-control {
+  color: #ffff;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid orangered;
+  padding: 10px;
+
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-bottom: 2px solid blue;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #23262e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #777;
+}
+
+.list-group {
+  height: 300px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.list-group li {
+  font-size: 15px;
+
+  border: 1px solid #0c0d0f;
+  padding: 15px;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.list-group li:hover {
+  background-color: #23262e;
+}
+
+.list-group li.done {
+  color: #777;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.list-group li.done::after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  float: right;
+}
