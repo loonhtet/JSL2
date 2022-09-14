@@ -23,11 +23,11 @@ function showbox(idx) {
       imagebox.addEventListener("click", function (e) {
         console.log(e.target.className);
 
-        if ((e.target.className = "btn-close")) {
+        if (e.target.className === "btn-close") {
           imagebox.classList.remove("show");
         }
 
-        if ((e.target.className = "btn")) {
+        if (e.target.className === "btn") {
           const subbtn = getimageboxes[idx].querySelector(".btn");
           subbtn.textContent = "Subscribed";
         }
@@ -37,3 +37,16 @@ function showbox(idx) {
     }
   });
 }
+
+// imagebox.addEventListener("click", function (e) {
+//   console.log(e.target.className);
+
+//   if ((e.target.className = "btn-close")) {
+//     imagebox.classList.remove("show");
+//   }
+
+//   if ((e.target.className = "btn")) {
+//     const subbtn = getimageboxes[idx].querySelector(".btn");
+//     subbtn.textContent = "Subscribed";
+//   }
+// });
